@@ -1,0 +1,26 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Stopwatch plugin for Craft CMS 4.x
+ *
+ * stopwatch Settings.twig
+ *
+ * @author    percipio.london
+ * @copyright Copyright (c) 2022 percipio.london
+ * @link      percipio.london
+ * @package   Stopwatch
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("percipiolondon\\stopwatch\\assetbundles\\stopwatch\\StopwatchAsset") %}
+
+{{ forms.textField({
+    label: 'Average words per minute',
+    instructions: 'Add the calculation of how many words per minute the adience reads',
+    id: 'wordsPerMinute',
+    name: 'wordsPerMinute',
+    value: settings['wordsPerMinute']})
+}}

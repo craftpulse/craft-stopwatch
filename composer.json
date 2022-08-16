@@ -1,0 +1,47 @@
+{
+    "name": "percipiolondon/craft-stopwatch",
+    "description": "This plugin calculates how much time it takes to read the page and watch the videos",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "craft-stopwatch"
+    ],
+    "support": {
+        "docs": "https://github.com/percipioglobal/craft-stopwatch/blob/master/README.md",
+        "issues": "https://github.com/percipioglobal/craft-stopwatch/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "percipio.london",
+            "homepage": "percipio.london"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.0.2",
+        "craftcms/cms": "^4.0.0-beta.1"
+    },
+    "require-dev": {
+        "craftcms/phpstan": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+          "percipiolondon\\stopwatch\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Stopwatch",
+        "handle": "stopwatch",
+        "developer": "percipio.london",
+        "developerUrl": "percipio.london",
+        "documentationUrl": "https://github.com/percipioglobal/craft-stopwatch/blob/master/README.md",
+        "changelogUrl": "https://raw.githubusercontent.com/percipioglobal/craft-stopwatch/master/CHANGELOG.md",
+        "class": "percipiolondon\\stopwatch\\Stopwatch"
+    }
+}
