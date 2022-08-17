@@ -71,13 +71,12 @@ class StopwatchTwigExtension extends AbstractExtension
     }
 
     /**
-     * Our function called via Twig; it can do anything you want
-     *
-     * @param null $text
-     *
-     * @return string
+     * @param mixed $element
+     * @param bool $showpSeconds
+     * @return TimeModel
+     * @throws \craft\errors\InvalidFieldException
      */
-    public function calculateFunction(Entry|array $element, bool $showSeconds = true): TimeModel
+    public function calculateFunction(mixed $element, bool $showSeconds = true): TimeModel
     {
         return Stopwatch::$plugin->stopwatch->calculateReadTime($element, $showSeconds);
     }
