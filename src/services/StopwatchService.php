@@ -49,10 +49,12 @@ class StopwatchService extends Component
      *
      * Stopwatch::$plugin->stopwatch->calculateReadTime()
      *
+     * @param mixed $element
+     * @param bool $showpSeconds
      * @return mixed
      * @throws \craft\errors\InvalidFieldException
      */
-    public function calculateReadTime(Entry|array $element, bool $showSeconds = true): TimeModel
+    public function calculateReadTime(mixed $element, bool $showSeconds = true): TimeModel
     {
         $totalSeconds = 0;
 
@@ -64,7 +66,7 @@ class StopwatchService extends Component
                 try {
 
                     // If field is a matrix then loop through fields in block
-                    if ($field instanceof \craft\elements\db\MatrixBlockQuery) {
+                    if ($field instanceof \craft\elements\db\MatrixBlockQuery || $field instanceof \Illuminate\Support\Collection) {
                         foreach ($element->getFieldValue($key)->all() as $block) {
                             $blockFields = $block->getFieldValues();
 
