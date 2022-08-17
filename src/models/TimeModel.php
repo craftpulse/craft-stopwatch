@@ -83,7 +83,7 @@ class TimeModel extends Model
      */
     public function minutes(): int
     {
-        return floor($this->seconds / 60);
+        return ceil($this->seconds / 60);
     }
 
     /**
@@ -91,6 +91,6 @@ class TimeModel extends Model
      */
     public function hours(): int
     {
-        return floor(($this->seconds /  60) / 60);
+        return ceil(($this->seconds /  60) / 60);
     }
 }
