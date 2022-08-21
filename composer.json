@@ -2,7 +2,7 @@
     "name": "percipiolondon/craft-stopwatch",
     "description": "This plugin calculates how much time it takes to read the page and watch the videos",
     "type": "craft-plugin",
-    "version": "1.0.0",
+    "version": "1.0.0-beta",
     "keywords": [
         "craft",
         "cms",
@@ -18,7 +18,7 @@
     "authors": [
         {
             "name": "percipio.london",
-            "homepage": "percipio.london"
+            "homepage": "http://percipio.london"
         }
     ],
     "minimum-stability": "dev",
