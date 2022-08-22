@@ -37,7 +37,7 @@ class StopwatchTwigExtension extends AbstractExtension
      *
      * @return string The extension name
      */
-    public function getName()
+    public function getName(): string
     {
         return 'stopwatch';
     }
@@ -49,7 +49,7 @@ class StopwatchTwigExtension extends AbstractExtension
      *
      * @return array
      */
-    public function getFilters()
+    public function getFilters(): array
     {
         return [
 //            new TwigFilter('someFilter', [$this, 'someInternalFunction']),
@@ -63,7 +63,7 @@ class StopwatchTwigExtension extends AbstractExtension
      *
     * @return array
      */
-    public function getFunctions()
+    public function getFunctions(): array
     {
         return [
             new TwigFunction('stopwatch', [$this, 'calculateFunction']),
@@ -74,7 +74,7 @@ class StopwatchTwigExtension extends AbstractExtension
      * @param mixed $element
      * @param bool $showpSeconds
      * @return TimeModel
-     * @throws \craft\errors\InvalidFieldException
+     * @throws InvalidFieldException
      */
     public function calculateFunction(mixed $element, bool $showSeconds = true): TimeModel
     {

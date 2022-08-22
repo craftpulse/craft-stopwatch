@@ -50,9 +50,9 @@ class StopwatchService extends Component
      * Stopwatch::$plugin->stopwatch->calculateReadTime()
      *
      * @param mixed $element
-     * @param bool $showpSeconds
+     * @param bool $showSeconds
      * @return mixed
-     * @throws \craft\errors\InvalidFieldException
+     * @throws InvalidFieldException
      */
     public function calculateReadTime(mixed $element, bool $showSeconds = true): TimeModel
     {

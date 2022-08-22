@@ -79,7 +79,7 @@ class Stopwatch extends Plugin
     public bool $hasCpSection = false;
 
     /**
-     * @var \percipiolondon\typesense\models\Settings|Model|null
+     * @var Settings|Model|null
      */
     public static Settings|Model|null $settings = null;
 
@@ -97,7 +97,7 @@ class Stopwatch extends Plugin
      * you do not need to load it in your init() method.
      *
      */
-    public function init()
+    public function init(): void
     {
         parent::init();
         self::$plugin = $this;
