@@ -1,14 +1,15 @@
 {
     "name": "percipiolondon/craft-stopwatch",
-    "description": "This plugin calculates how much time it takes to read the page and watch the videos",
+    "description": "This plugin calculates how much time it takes to read the page and watch the videos or listen to audio fragments",
     "type": "craft-plugin",
-    "version": "1.0.0-beta",
+    "version": "4.0.0-beta.1",
     "keywords": [
         "craft",
         "cms",
         "craftcms",
         "craft-plugin",
-        "craft-stopwatch"
+        "craft-stopwatch",
+        "readtime"
     ],
     "support": {
         "docs": "https://github.com/percipioglobal/craft-stopwatch/blob/master/README.md",
@@ -25,9 +26,10 @@
     "prefer-stable": true,
     "require": {
         "php": "^8.0.2",
-        "craftcms/cms": "^4.0.0-beta.1"
+        "craftcms/cms": "^4.0.0"
     },
     "require-dev": {
+        "roave/security-advisories": "dev-latest",
         "craftcms/phpstan": "dev-main"
     },
     "autoload": {
