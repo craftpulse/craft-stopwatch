@@ -1,5 +1,5 @@
 {
-    "name": "percipiolondon/craft-stopwatch",
+    "name": "craftpulse/craft-stopwatch",
     "description": "This plugin calculates how much time it takes to read the page and watch the videos",
     "type": "craft-plugin",
     "version": "1.0.0-beta",
